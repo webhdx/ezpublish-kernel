@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "da2fb04df721ec31e610f33ccc621eb6",
+    "content-hash": "0f52bb01e87d4fcfcff2ff8eafe69d75",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2177,30 +2177,6 @@
                 "simple-cache"
             ],
             "time": "2017-01-02T13:31:39+00:00"
-        },
-        {
-            "name": "qafoo/rmf",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Qafoo/REST-Micro-Framework.git",
-                "reference": "d382e9e20ff189c4351f12c70df083dac039e818"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Qafoo/REST-Micro-Framework/zipball/d382e9e20ff189c4351f12c70df083dac039e818",
-                "reference": "d382e9e20ff189c4351f12c70df083dac039e818",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Qafoo\\RMF": "src/main/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Very simple VC framework which makes it easy to build HTTP applications / REST webservices",
-            "time": "2012-09-03T11:24:11+00:00"
         },
         {
             "name": "sensio/distribution-bundle",
