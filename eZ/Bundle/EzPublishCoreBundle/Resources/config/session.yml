@@ -16,6 +16,12 @@ services:
         tags:
             - { name: kernel.event_subscriber }
 
+
+    ezpublish.ajax_session_close_listener:
+        class: 'eZ\Bundle\EzPublishCoreBundle\EventListener\AjaxSessionCloseListener'
+        tags:
+            - { name: "kernel.event_listener", event: "kernel.request", priority: -255 }
+
     # Override the session attribute bag to set custom storage key so same is used as legacy
     # @deprecated To be removed in 7.0 kernel, see 594b083d94f1cff7008fb0d7d54f40d0ce0a2ace
     session.attribute_bag:
