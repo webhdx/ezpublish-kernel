@@ -100,8 +100,6 @@ class EzPublishCoreExtension extends Extension implements PrependExtensionInterf
         $loader->load('services.yml');
         // Security services
         $loader->load('security.yml');
-        // Slots
-        $loader->load('slot.yml');
 
         // Default settings
         $this->handleDefaultSettingsLoading($container, $loader);
