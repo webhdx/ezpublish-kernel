@@ -9,10 +9,11 @@
 namespace eZ\Publish\Core\Repository\SiteAccessAware;
 
 use eZ\Publish\API\Repository\FieldTypeService as FieldTypeServiceInterface;
-use eZ\Publish\Core\Repository\SiteAccessAware\Helper\LanguageResolver;
 
 /**
- * FieldTypeService class.
+ * FieldTypeService for SiteAccessAware layer.
+ *
+ * Currently does nothing but hand over calls to aggregated service.
  */
 class FieldTypeService implements FieldTypeServiceInterface
 {
@@ -24,60 +25,26 @@ class FieldTypeService implements FieldTypeServiceInterface
     protected $service;
 
     /**
-     * Language resolver
-     *
-     * @var LanguageResolver
-     */
-    protected $languageResolver;
-
-    /**
-     * Constructor.
-     *
-     * Construct service object from aggregated service
+     * Construct service object from aggregated service.
      *
      * @param \eZ\Publish\API\Repository\FieldTypeService $service
-     * @param LanguageResolver $languageResolver
      */
     public function __construct(
-        FieldTypeServiceInterface $service,
-        LanguageResolver $languageResolver
+        FieldTypeServiceInterface $service
     ) {
         $this->service = $service;
-        $this->languageResolver = $languageResolver;
     }
 
-    /**
-     * Returns a list of all field types.
-     *
-     * @return \eZ\Publish\API\Repository\FieldType[]
-     */
     public function getFieldTypes()
     {
         return $this->service->getFieldTypes();
     }
 
-    /**
-     * Returns the FieldType registered with the given identifier.
-     *
-     * @param string $identifier
-     *
-     * @return \eZ\Publish\API\Repository\FieldType
-     *
-     * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
-     *         if there is no FieldType registered with $identifier
-     */
     public function getFieldType($identifier)
     {
         return $this->service->getFieldType($identifier);
     }
 
-    /**
-     * Returns if there is a FieldType registered under $identifier.
-     *
-     * @param string $identifier
-     *
-     * @return bool
-     */
     public function hasFieldType($identifier)
     {
         return $this->service->hasFieldType($identifier);

@@ -295,6 +295,8 @@ interface UserService
      * @param string $mainLanguageCode The main language for the underlying content object
      * @param null|\eZ\Publish\API\Repository\Values\ContentType\ContentType $contentType 5.x the content type for the underlying content object. In 4.x it is ignored and taken from the configuration
      *
+     * @deprecated The $contentType argument will receive type hint in next major version.
+     *
      * @return \eZ\Publish\API\Repository\Values\User\UserGroupCreateStruct
      */
     public function newUserGroupCreateStruct($mainLanguageCode, $contentType = null);
