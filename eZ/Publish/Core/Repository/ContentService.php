@@ -1619,9 +1619,13 @@ class ContentService implements ContentServiceInterface
 
         $this->repository->beginTransaction();
         try {
+            echo "break 1";
             $this->copyTranslationsFromPublishedVersion($content->versionInfo, $translations);
+            echo "break 2";
             $content = $this->internalPublishVersion($content->getVersionInfo(), null);
+            echo "break 3";
             $this->repository->commit();
+            echo "break 4";
         } catch (Exception $e) {
             $this->repository->rollback();
             throw $e;
