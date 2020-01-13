@@ -1627,6 +1627,9 @@ class ContentService implements ContentServiceInterface
             $this->repository->commit();
             echo "break 4";
         } catch (Exception $e) {
+            echo "<pre>";
+            var_dump($e);
+            echo "</pre>";
             $this->repository->rollback();
             throw $e;
         }
