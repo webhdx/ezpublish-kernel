@@ -186,6 +186,13 @@ services:
             - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
             - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
 
+    ezpublish.search.legacy.gateway.criterion_handler.common.object_state_identifier:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\ObjectStateIdentifier
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
     ezpublish.search.legacy.gateway.criterion_handler.common.field_relation:
         parent: ezpublish.search.legacy.gateway.criterion_handler.field_base
         class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\FieldRelation
@@ -203,6 +210,41 @@ services:
     ezpublish.search.legacy.gateway.criterion_handler.common.section_id:
         parent: ezpublish.search.legacy.gateway.criterion_handler.base
         class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\SectionId
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
+    ezpublish.search.legacy.gateway.criterion_handler.common.section_identifier:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\SectionIdentifier
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
+    ezpublish.search.legacy.gateway.criterion_handler.common.user_id:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\UserId
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
+    ezpublish.search.legacy.gateway.criterion_handler.common.user_email:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\UserEmail
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
+    ezpublish.search.legacy.gateway.criterion_handler.common.user_login:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\UserLogin
+        tags:
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
+            - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
+
+    ezpublish.search.legacy.gateway.criterion_handler.common.user_enabled:
+        parent: ezpublish.search.legacy.gateway.criterion_handler.base
+        class: eZ\Publish\Core\Search\Legacy\Content\Common\Gateway\CriterionHandler\UserEnabled
         tags:
             - {name: ezpublish.search.legacy.gateway.criterion_handler.content}
             - {name: ezpublish.search.legacy.gateway.criterion_handler.location}
