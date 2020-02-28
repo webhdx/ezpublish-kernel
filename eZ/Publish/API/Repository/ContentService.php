@@ -108,7 +108,7 @@ interface ContentService
      * @param array $languages A language priority, filters returned fields and is used as prioritized language code on
      *                         returned value object. If not given all languages are returned.
      * @param int $versionNo the version number. If not given the current version is returned from $contentInfo
-     * @param bool $useAlwaysAvailable Add Main language to \$languages if true (default) and if alwaysAvailable is true
+     * @param bool $useAlwaysAvailable Add Main language to $languages if true (default) and if alwaysAvailable is true
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content
      */
@@ -122,7 +122,7 @@ interface ContentService
      * @param \eZ\Publish\API\Repository\Values\Content\VersionInfo $versionInfo
      * @param array $languages A language priority, filters returned fields and is used as prioritized language code on
      *                         returned value object. If not given all languages are returned.
-     * @param bool $useAlwaysAvailable Add Main language to \$languages if true (default) and if alwaysAvailable is true
+     * @param bool $useAlwaysAvailable Add Main language to $languages if true (default) and if alwaysAvailable is true
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content
      */
@@ -140,7 +140,7 @@ interface ContentService
      * @param array $languages A language priority, filters returned fields and is used as prioritized language code on
      *                         returned value object. If not given all languages are returned.
      * @param int $versionNo the version number. If not given the current version is returned
-     * @param bool $useAlwaysAvailable Add Main language to \$languages if true (default) and if alwaysAvailable is true
+     * @param bool $useAlwaysAvailable Add Main language to $languages if true (default) and if alwaysAvailable is true
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content
      */
@@ -158,7 +158,7 @@ interface ContentService
      * @param array $languages A language priority, filters returned fields and is used as prioritized language code on
      *                         returned value object. If not given all languages are returned.
      * @param int $versionNo the version number. If not given the current version is returned
-     * @param bool $useAlwaysAvailable Add Main language to \$languages if true (default) and if alwaysAvailable is true
+     * @param bool $useAlwaysAvailable Add Main language to $languages if true (default) and if alwaysAvailable is true
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content
      */
@@ -174,7 +174,7 @@ interface ContentService
      * @param \eZ\Publish\API\Repository\Values\Content\ContentInfo[] $contentInfoList
      * @param string[] $languages A language priority, filters returned fields and is used as prioritized language code on
      *                            returned value object. If not given all languages are returned.
-     * @param bool $useAlwaysAvailable Add Main language to \$languages if true (default) and if alwaysAvailable is true,
+     * @param bool $useAlwaysAvailable Add Main language to $languages if true (default) and if alwaysAvailable is true,
      *                                 unless all languages have been asked for.
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content[] list of Content items with Content Ids as keys

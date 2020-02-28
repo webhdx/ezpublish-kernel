@@ -305,7 +305,7 @@ class MediaTest extends BinaryBaseTest
      *                  'mimeType' => 'image/jpeg',
      *              )
      *          ),
-     *          array(
+     *      array(
      *              'id' => 'some/file/here',
      *              'fileName' => 'sindelfingen.jpg',
      *              'fileSize' => 2342,

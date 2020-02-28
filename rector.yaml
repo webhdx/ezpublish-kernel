@@ -1,0 +1,14 @@
+parameters:
+  auto_import_names: false
+  paths:
+    - eZ
+  exclude_paths:
+    - eZ/Publish/API/Repository/Exceptions
+    - 'eZ/*/Tests/*'
+  sets:
+    - 'symfony40'
+    - 'symfony41'
+    - 'symfony42'
+    - 'symfony43'
+    - 'symfony44'
+    - 'symfony50'

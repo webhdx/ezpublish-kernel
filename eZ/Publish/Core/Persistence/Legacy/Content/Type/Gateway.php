@@ -210,7 +210,7 @@ abstract class Gateway
      * @param string $identifier
      * @param int $status
      *
-     * @return array(int=>array(string=>mixed)) Data rows.
+     * @return array (int=>array(string=>mixed)) Data rows.
      */
     abstract public function loadTypeDataByIdentifier($identifier, $status);
 
@@ -221,7 +221,7 @@ abstract class Gateway
      * @param mixed $remoteId
      * @param int $status
      *
-     * @return array(int=>array(string=>mixed)) Data rows.
+     * @return array (int=>array(string=>mixed)) Data rows.
      */
     abstract public function loadTypeDataByRemoteId($remoteId, $status);
 

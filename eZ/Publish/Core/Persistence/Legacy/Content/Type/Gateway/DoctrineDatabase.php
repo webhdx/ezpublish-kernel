@@ -1063,7 +1063,7 @@ class DoctrineDatabase extends Gateway
      * @param string $identifier
      * @param int $status
      *
-     * @return array(int=>array(string=>mixed)) Data rows.
+     * @return array (int=>array(string=>mixed)) Data rows.
      */
     public function loadTypeDataByIdentifier($identifier, $status)
     {
@@ -1084,7 +1084,7 @@ class DoctrineDatabase extends Gateway
      * @param mixed $remoteId
      * @param int $status
      *
-     * @return array(int=>array(string=>mixed)) Data rows.
+     * @return array (int=>array(string=>mixed)) Data rows.
      */
     public function loadTypeDataByRemoteId($remoteId, $status)
     {
