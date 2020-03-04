@@ -7,7 +7,9 @@
         "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required"
     },
     "repositories": [
-        {"type": "vcs", "url": "https://github.com/ezsystems/doctrine-dbal-schema.git"}
+        {"type": "vcs", "url": "https://github.com/ezsystems/doctrine-dbal-schema.git"},
+        {"type": "vcs", "url": "https://github.com/webhdx/JMSTranslationBundle.git"},
+        {"type": "vcs", "url": "https://github.com/webhdx/Routing.git"}
     ],
     "require": {
         "php": "^7.3",
@@ -39,6 +41,7 @@
         "symfony/expression-language": "^5.0",
         "symfony/validator": "^5.0",
         "ezsystems/doctrine-dbal-schema": "dev-symfony5 as 1.0.x-dev",
+        "symfony-cmf/routing": "dev-symfony5 as 2.1.x-dev",
         "kriswallsmith/buzz": "^1.0",
         "nelmio/cors-bundle": "^2.0",
         "pagerfanta/pagerfanta": "^2.1",
@@ -48,6 +51,7 @@
         "oneup/flysystem-bundle": "^3.4",
         "friendsofsymfony/http-cache-bundle": "^2.8",
         "sensio/framework-extra-bundle": "^5.5",
+        "jms/translation-bundle": "dev-symfony5 as 2.0.x-dev",
         "twig/twig": "^3.0",
         "twig/extra-bundle": "^3.0",
         "friendsofsymfony/jsrouting-bundle": "^2.5",
